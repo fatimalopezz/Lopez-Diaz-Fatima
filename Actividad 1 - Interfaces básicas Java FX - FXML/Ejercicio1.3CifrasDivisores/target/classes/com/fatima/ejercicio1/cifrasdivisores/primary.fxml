@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="395.0" prefWidth="485.0"
+            minHeight="395.0" minWidth="485.0"
+            maxHeight="395.0" maxWidth="485.0"
+            style="-fx-background-color: white; -fx-border-color: #333333; -fx-border-width: 2px;"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fatima.ejercicio1.cifrasdivisores.Controlador">
+
+    <HBox layoutX="0.0" layoutY="0.0"
+          prefWidth="481.0" prefHeight="29.0"
+          alignment="CENTER_LEFT" spacing="4.0"
+          style="-fx-background-color: #dedede; -fx-border-color: #333333; -fx-border-width: 0 0 2 0;">
+        <padding>
+            <Insets top="0.0" right="5.0" bottom="0.0" left="5.0"/>
+        </padding>
+        <Label text="Cifras y Divisores de un Número"
+               maxWidth="Infinity" HBox.hgrow="ALWAYS"
+               alignment="CENTER"
+               style="-fx-font-size: 12px;"/>
+    </HBox>
+
+    <Label layoutX="15.0" layoutY="64.0"
+           text="Ingrese un número" style="-fx-font-size: 11px;"/>
+
+    <TextField fx:id="txtNumero"
+               layoutX="109.0" layoutY="52.0"
+               prefWidth="126.0" prefHeight="35.0"/>
+
+    <Button layoutX="286.0" layoutY="52.0"
+            text="Analizar" onAction="#analizar"
+            prefWidth="84.0" prefHeight="35.0"/>
+
+    <Button layoutX="374.0" layoutY="52.0"
+            text="Limpiar" onAction="#limpiar"
+            prefWidth="84.0" prefHeight="35.0"/>
+
+    <Label layoutX="15.0" layoutY="154.0"
+           text="Cantidad de cifras" style="-fx-font-size: 11px;"/>
+    <Label fx:id="lblCifras"
+           layoutX="137.0" layoutY="145.0"
+           prefWidth="99.0" prefHeight="35.0"
+           alignment="CENTER_LEFT"
+           style="-fx-background-color: white; -fx-border-color: #777777; -fx-padding: 4px; -fx-font-size: 12px;"/>
+
+    <Label layoutX="15.0" layoutY="192.0"
+           text="Suma de cifras impares" style="-fx-font-size: 11px;"/>
+    <Label fx:id="lblSumaImpares"
+           layoutX="137.0" layoutY="183.0"
+           prefWidth="99.0" prefHeight="35.0"
+           alignment="CENTER_LEFT"
+           style="-fx-background-color: white; -fx-border-color: #777777; -fx-padding: 4px; -fx-font-size: 12px;"/>
+
+    <Label layoutX="15.0" layoutY="230.0"
+           text="Suma de cifras pares" style="-fx-font-size: 11px;"/>
+    <Label fx:id="lblSumaPares"
+           layoutX="137.0" layoutY="221.0"
+           prefWidth="99.0" prefHeight="35.0"
+           alignment="CENTER_LEFT"
+           style="-fx-background-color: white; -fx-border-color: #777777; -fx-padding: 4px; -fx-font-size: 12px;"/>
+
+    <Label layoutX="15.0" layoutY="268.0"
+           text="Suma total de cifras" style="-fx-font-size: 11px;"/>
+    <Label fx:id="lblSumaTotal"
+           layoutX="137.0" layoutY="259.0"
+           prefWidth="99.0" prefHeight="35.0"
+           alignment="CENTER_LEFT"
+           style="-fx-background-color: white; -fx-border-color: #777777; -fx-padding: 4px; -fx-font-size: 12px;"/>
+
+    <Label layoutX="15.0" layoutY="306.0"
+           text="Cifra mayor" style="-fx-font-size: 11px;"/>
+    <Label fx:id="lblMayor"
+           layoutX="137.0" layoutY="297.0"
+           prefWidth="99.0" prefHeight="35.0"
+           alignment="CENTER_LEFT"
+           style="-fx-background-color: white; -fx-border-color: #777777; -fx-padding: 4px; -fx-font-size: 12px;"/>
+
+    <Label layoutX="15.0" layoutY="344.0"
+           text="Cifra menor" style="-fx-font-size: 11px;"/>
+    <Label fx:id="lblMenor"
+           layoutX="137.0" layoutY="335.0"
+           prefWidth="99.0" prefHeight="35.0"
+           alignment="CENTER_LEFT"
+           style="-fx-background-color: white; -fx-border-color: #777777; -fx-padding: 4px; -fx-font-size: 12px;"/>
+
+    <Label layoutX="286.0" layoutY="154.0"
+           text="Divisores" style="-fx-font-size: 11px;"/>
+
+    <TextArea fx:id="txtDivisores"
+              layoutX="286.0" layoutY="180.0"
+              prefWidth="172.0" prefHeight="187.0"
+              editable="false" wrapText="false"
+              style="-fx-font-size: 12px;"/>
+
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fatima.ejercicio1.edad.Controlador">
+
+    <children>
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="EDAD DE UNA PERSONA" />
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Fecha de nacimiento:" />
+            <TextField fx:id="txtFechaNacimiento" prefWidth="130.0" promptText="dd/MM/aaaa" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="15.0">
+            <Button onAction="#calcularEdad" prefWidth="100.0" text="Calcular" />
+            <Button onAction="#limpiar" prefWidth="100.0" text="Limpiar" />
+        </HBox>
+
+        <Label fx:id="lblResultado" style="-fx-font-size: 16px;" text="" />
+    </children>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
